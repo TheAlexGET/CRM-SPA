@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
     <!-- Style -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@400;500&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -19,50 +19,52 @@
       <div class="navbar">
         <div class="navbar__content">
           <div class="navbar__logo">
-            <img src="img/logo.png" alt="">
+            <img src="img/logo.png" alt="" />
             <div class="navbar__logo__version">v.01</div>
           </div>
           <div class="navbar__items">
-            <div class="navbar__items__row">
+            <div class="navbar__items-row">
               <div class="navbar__item">
-                <div class="item__naming">
-                  <img src="img/product-item.png" alt="">
+                <div class="navbar__item-naming">
+                  <img src="img/product-item.png" alt="" />
                   <a>Product</a>
                 </div>
               </div>
               <div class="navbar__item">
-                <div class="item__naming">
-                  <img src="img/product-item.png" alt="">
+                <div class="navbar__item-naming">
+                  <img src="img/product-item.png" alt="" />
                   <a>Product</a>
-                </div>
-                <div class="chevron">></div>
-              </div>
-              <div class="navbar__item navbar__item_active">
-                <div class="item__naming">
-                  <img src="img/customers-item.png" alt="">
-                  <a>Customers</a>
                 </div>
                 <div class="chevron">></div>
               </div>
             </div>
-            <div class="navbar__items__row">
-              <div class="navbar__item">
-                <div class="item__naming">
-                  <img src="img/income-item.png" alt="">
-                  <a>Income</a>
+            <div class="navbar__items-row">
+              <div class="navbar__item navbar__item_active">
+                <div class="navbar__item-naming">
+                  <img src="img/customers-item.png" alt="" />
+                  <a>Customers</a>
                 </div>
                 <div class="chevron">></div>
               </div>
               <div class="navbar__item">
-                <div class="item__naming">
-                  <img src="img/promote-item.png" alt="">
+                <div class="navbar__item-naming">
+                  <img src="img/income-item.png" alt="" />
+                  <a>Income</a>
+                </div>
+                <div class="chevron">></div>
+              </div>
+            </div>
+            <div class="navbar__items-row">
+              <div class="navbar__item">
+                <div class="navbar__item-naming">
+                  <img src="img/promote-item.png" alt="" />
                   <a>Promote</a>
                 </div>
                 <div class="chevron">></div>
               </div>
               <div class="navbar__item">
-                <div class="item__naming">
-                  <img src="img/help-item.png" alt="">
+                <div class="navbar__item-naming">
+                  <img src="img/help-item.png" alt="" />
                   <a>Help</a>
                 </div>
                 <div class="chevron">></div>
@@ -72,7 +74,7 @@
         </div>
         <div class="navbar__admin">
           <figure>
-            <img src="img/evano.png" alt="">
+            <img src="img/evano.png" alt="" />
             <div>
               <figcaption class="admin__name">Evano</figcaption>
               <figcaption class="admin__position">Project Manager</figcaption>
@@ -84,7 +86,192 @@
         <div class="dashboard__content">
           <h1 class="dashboard__header">Hello Evano 👋🏼,</h1>
           <div class="dashboard__users">
-          
+            <div class="dashboard__users-head">
+              <div class="dashboard__users-titles">
+                <h1 class="dashboard__users-title">All Customers</h1>
+                <h3 class="dashboard__users-subtitle">Active Members</h3>
+              </div>
+              <div class="dashboard__users-input">
+                <input
+                  type="text"
+                  placeholder="Search"
+                  class="dashboard__users-input-field"
+                />
+              </div>
+            </div>
+            <div class="dashboard__users-table-container">
+              <table class="dashboard__users-table">
+                <tr class="dashboard__users-table-row">
+                  <th class="dashboard__users-table-header">Customer Name</th>
+                  <th class="dashboard__users-table-header">Company</th>
+                  <th class="dashboard__users-table-header">Phone Number</th>
+                  <th class="dashboard__users-table-header">Email</th>
+                  <th class="dashboard__users-table-header">Country</th>
+                  <th class="dashboard__users-table-header">Status</th>
+                </tr>
+                <tr>
+                  <td colspan="6">
+                    <div><hr /></div>
+                  </td>
+                </tr>
+                <tr class="dashboard__users-table-row">
+                  <td class="dashboard__users-table-data">Jane Cooper</td>
+                  <td class="dashboard__users-table-data">Microsoft</td>
+                  <td class="dashboard__users-table-data">(225) 555-0118</td>
+                  <td class="dashboard__users-table-data">
+                    jane@microsoft.com
+                  </td>
+                  <td class="dashboard__users-table-data">United States</td>
+                  <td class="dashboard__users-table-data">
+                    <div>
+                      <input
+                        type="button"
+                        class="dashboard__users-table-status-button--active"
+                        value="Active"
+                      />
+                    </div>
+                  </td>
+                </tr>
+                <tr class="dashboard__users-table-row">
+                  <td class="dashboard__users-table-data">Floyd Miles</td>
+                  <td class="dashboard__users-table-data">Yahoo</td>
+                  <td class="dashboard__users-table-data">(205) 555-0100</td>
+                  <td class="dashboard__users-table-data">floyd@yahoo.com</td>
+                  <td class="dashboard__users-table-data">Kiribati</td>
+                  <td class="dashboard__users-table-data">
+                    <div>
+                      <input
+                        type="button"
+                        class="dashboard__users-table-status-button--inactive"
+                        value="Inactive"
+                      />
+                    </div>
+                  </td>
+                </tr>
+                <tr class="dashboard__users-table-row">
+                  <td class="dashboard__users-table-data">Ronald Richards</td>
+                  <td class="dashboard__users-table-data">Adobe</td>
+                  <td class="dashboard__users-table-data">(302) 555-0107</td>
+                  <td class="dashboard__users-table-data">ronald@adobe.com</td>
+                  <td class="dashboard__users-table-data">Israel</td>
+                  <td class="dashboard__users-table-data">
+                    <div>
+                      <input
+                        type="button"
+                        class="dashboard__users-table-status-button--inactive"
+                        value="Inactive"
+                      />
+                    </div>
+                  </td>
+                </tr>
+                <tr class="dashboard__users-table-row">
+                  <td class="dashboard__users-table-data">Marvin McKinney</td>
+                  <td class="dashboard__users-table-data">Tesla</td>
+                  <td class="dashboard__users-table-data">(252) 555-0126</td>
+                  <td class="dashboard__users-table-data">marvin@tesla.com</td>
+                  <td class="dashboard__users-table-data">Iran</td>
+                  <td class="dashboard__users-table-data">
+                    <div>
+                      <input
+                        type="button"
+                        class="dashboard__users-table-status-button--active"
+                        value="Active"
+                      />
+                    </div>
+                  </td>
+                </tr>
+                <tr class="dashboard__users-table-row">
+                  <td class="dashboard__users-table-data">Jerome Bell</td>
+                  <td class="dashboard__users-table-data">Google</td>
+                  <td class="dashboard__users-table-data">(629) 555-0129</td>
+                  <td class="dashboard__users-table-data">jerome@google.com</td>
+                  <td class="dashboard__users-table-data">Réunion</td>
+                  <td class="dashboard__users-table-data">
+                    <div>
+                      <input
+                        type="button"
+                        class="dashboard__users-table-status-button--active"
+                        value="Active"
+                      />
+                    </div>
+                  </td>
+                </tr>
+                <tr class="dashboard__users-table-row">
+                  <td class="dashboard__users-table-data">Kathryn Murphy</td>
+                  <td class="dashboard__users-table-data">Microsoft</td>
+                  <td class="dashboard__users-table-data">(406) 555-0120</td>
+                  <td class="dashboard__users-table-data">
+                    kathryn@microsoft.com
+                  </td>
+                  <td class="dashboard__users-table-data">Curaçao</td>
+                  <td class="dashboard__users-table-data">
+                    <div>
+                      <input
+                        type="button"
+                        style="width: 84px"
+                        class="dashboard__users-table-status-button--active"
+                        value="Active"
+                      />
+                    </div>
+                  </td>
+                </tr>
+                <tr class="dashboard__users-table-row">
+                  <td class="dashboard__users-table-data">Jacob Jones</td>
+                  <td class="dashboard__users-table-data">Yahoo</td>
+                  <td class="dashboard__users-table-data">(208) 555-0112</td>
+                  <td class="dashboard__users-table-data">jacob@yahoo.com</td>
+                  <td class="dashboard__users-table-data">Brazil</td>
+                  <td class="dashboard__users-table-data">
+                    <div>
+                      <input
+                        type="button"
+                        style="width: 84px"
+                        class="dashboard__users-table-status-button--active"
+                        value="Active"
+                      />
+                    </div>
+                  </td>
+                </tr>
+                <tr class="dashboard__users-table-row">
+                  <td class="dashboard__users-table-data">Kristin Watson</td>
+                  <td class="dashboard__users-table-data">Facebook</td>
+                  <td class="dashboard__users-table-data">(704) 555-0127</td>
+                  <td class="dashboard__users-table-data">
+                    kristin@facebook.com
+                  </td>
+                  <td class="dashboard__users-table-data">Åland Islands</td>
+                  <td class="dashboard__users-table-data">
+                    <div>
+                      <input
+                        type="button"
+                        style="width: 84px"
+                        class="dashboard__users-table-status-button--inactive"
+                        value="Inactive"
+                      />
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="dashboard__users-footer">
+              <div class="dashboard__users-footer-text">
+                Showing data 1 to 8 of 256K entries
+              </div>
+              <div class="dashboard__users-footer-buttons">
+                <div class="dashboard__users-footer-button">&lt;</div>
+                <div
+                  class="dashboard__users-footer-button dashboard__users-footer-button--active"
+                >
+                  1
+                </div>
+                <div class="dashboard__users-footer-button">2</div>
+                <div class="dashboard__users-footer-button">3</div>
+                <div class="dashboard__users-footer-button">4</div>
+                <div class="dashboard__users-footer-restbtn">...</div>
+                <div class="dashboard__users-footer-button">40</div>
+                <div class="dashboard__users-footer-button">&gt;</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
