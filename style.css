@@ -278,6 +278,8 @@ hr {
   align-items: center;
   cursor: pointer;
 
+  padding: 6px 10px;
+
   /* fonts */
   font-family: "Poppins", sans-serif;
   font-size: 12px;
@@ -287,7 +289,6 @@ hr {
 .dashboard__users-footer-button--active {
   padding: 6px 10px;
   display: inline-flex;
-  padding: 6px 10px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -306,7 +307,7 @@ hr {
 }
 
 /* Responsive styles */
-/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Small devices (portrait tablets and large phones, 200px and up) */
 @media (min-width: 200px) {
   .App {
     display: flex;
@@ -339,7 +340,7 @@ hr {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: start;
     margin-left: 0;
     margin-top: 0;
   }
@@ -397,9 +398,16 @@ hr {
     max-width: 100%;
     overflow-x: auto; /* Enable horizontal scrolling */
   }
+  .dashboard__users-footer-buttons {
+    display: flex;
+    margin-top: 30px;
+    width: 30%;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
+/* Medium devices (landscape tablets, 527px and up) */
 @media (min-width: 527px) {
   .navbar {
     display: flex;
@@ -416,9 +424,16 @@ hr {
     top: 340px;
     right: 50px;
   }
+  .dashboard__users-footer-buttons {
+    display: flex;
+    margin-top: 30px;
+    width: 30%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
+/* Large devices (laptops/desktops, 790px and up) */
 @media (min-width: 790px) {
   .navbar {
     display: flex;
@@ -436,7 +451,7 @@ hr {
   }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* Extra large devices (large laptops and desktops, 1274px and up) */
 @media (min-width: 1274px) {
   .App {
     display: flex;
