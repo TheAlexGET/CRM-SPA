@@ -351,11 +351,10 @@ hr {
   }
 
   .navbar__admin {
-    margin-left: 28px;
+    margin-left: 10px;
     margin-bottom: 76px;
     position: absolute;
-    top: 440px;
-    right: 50px;
+    top: 475px;
   }
 
   .navbar__admin figure {
@@ -395,6 +394,10 @@ hr {
   .dashboard__users {
     width: 100%;
   }
+
+  .dashboard__users-input-field{
+    width: 100px;
+  } 
   .dashboard__users-table-container {
     max-width: 100%;
     overflow-x: auto; /* Enable horizontal scrolling */
@@ -429,8 +432,12 @@ hr {
     display: flex;
     margin-top: 30px;
     width: 30%;
-    justify-content: space-between;
+    justify-content: start;
     flex-wrap: wrap;
+  }
+
+  .dashboard__users-input-field {
+    width: 216px;
   }
 }
 
@@ -449,6 +456,14 @@ hr {
     position: absolute;
     top: 190px;
     right: 50px;
+  }
+
+  .dashboard__users-footer-buttons {
+    display: flex;
+    margin-top: 30px;
+    width: 30%;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
