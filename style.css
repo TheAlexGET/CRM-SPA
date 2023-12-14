@@ -278,8 +278,10 @@ hr {
   justify-content: end;
   align-items: center;
   cursor: pointer;
-
-  padding: 6px 10px;
+  background-color: #ffffff;
+  border: none;
+  width: 25px;
+  height: 24px;
 
   /* fonts */
   font-family: "Poppins", sans-serif;
